@@ -1,7 +1,7 @@
 ### 3. app/main.py
 from fastapi import FastAPI, Query
 from fastapi.middleware.cors import CORSMiddleware
-from app.model import model
+import model
 
 app = FastAPI()
 

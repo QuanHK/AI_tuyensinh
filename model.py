@@ -3,7 +3,7 @@ import json
 import torch
 
 class QAModel:
-    def __init__(self, data_path="app/qa_data.json"):
+    def __init__(self, data_path="qa_data.json"):
         self.model = SentenceTransformer("VoVanPhuc/sup-SimCSE-VietNamese-phobert-base")
         with open(data_path, encoding="utf-8") as f:
             self.data = json.load(f)
